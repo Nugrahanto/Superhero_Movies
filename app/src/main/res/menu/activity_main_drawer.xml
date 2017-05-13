@@ -4,32 +4,28 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_avengers"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_stars_black_24dp"
             android:title="Avengers" />
         <item
             android:id="@+id/nav_batman"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_stars_black_24dp"
             android:title="Batman" />
         <item
             android:id="@+id/nav_captamerica"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_stars_black_24dp"
             android:title="Captain America " />
         <item
             android:id="@+id/nav_spiderman"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_stars_black_24dp"
             android:title="Spiderman" />
         <item
             android:id="@+id/nav_superman"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_stars_black_24dp"
             android:title="Superman " />
         <item
             android:id="@+id/nav_wolverine"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_stars_black_24dp"
             android:title="Wolverine" />
-        <item
-            android:id="@+id/nav_xmen"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="X-Men" />
 
     </group>
 

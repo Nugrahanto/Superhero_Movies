@@ -125,8 +125,6 @@ public class MainActivity extends AppCompatActivity
             fragment = new WolverineFragment();
             setTitle("Wolverine Movie");
 
-        } else if (id == R.id.nav_xmen) {
-
         }
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commitNow();
