@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_avengers"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Avengers" />
+        <item
+            android:id="@+id/nav_batman"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Batman" />
+        <item
+            android:id="@+id/nav_captamerica"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Captain America " />
+        <item
+            android:id="@+id/nav_spiderman"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Spiderman" />
+        <item
+            android:id="@+id/nav_superman"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Superman " />
+        <item
+            android:id="@+id/nav_ultraman"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ultraman" />
+        <item
+            android:id="@+id/nav_wolverine"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Wolverine" />
+        <item
+            android:id="@+id/nav_xmen"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="X-Men" />
+
+    </group>
+
+</menu>
