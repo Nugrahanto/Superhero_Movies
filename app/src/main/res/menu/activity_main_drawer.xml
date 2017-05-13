@@ -23,10 +23,6 @@
             android:icon="@drawable/ic_menu_manage"
             android:title="Superman " />
         <item
-            android:id="@+id/nav_ultraman"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Ultraman" />
-        <item
             android:id="@+id/nav_wolverine"
             android:icon="@drawable/ic_menu_manage"
             android:title="Wolverine" />

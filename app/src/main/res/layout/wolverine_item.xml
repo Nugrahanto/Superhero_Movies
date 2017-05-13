@@ -12,7 +12,7 @@
         android:elevation="10dp">
 
         <LinearLayout
-            android:id="@+id/LinearLayoutAve"
+            android:id="@+id/LinearLayoutWol"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorBgCv"
@@ -20,7 +20,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageViewOtofAve"
+                android:id="@+id/imageViewOtofWol"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
@@ -32,7 +32,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textViewHeadAve"
+                    android:id="@+id/textViewHeadWol"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="7dp"
@@ -44,7 +44,7 @@
                     android:textSize="10pt" />
 
                 <TextView
-                    android:id="@+id/textViewDescAve"
+                    android:id="@+id/textViewDescWol"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="7dp"

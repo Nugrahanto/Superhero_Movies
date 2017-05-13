@@ -2,11 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.Avengers.AvengersFragment">
+    tools:context="id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.Spiderman.SpidermanFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerViewAve"
+        android:id="@+id/recyclerViewSpi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorBg">

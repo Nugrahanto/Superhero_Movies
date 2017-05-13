@@ -15,6 +15,11 @@ import android.view.MenuItem;
 import android.view.View;
 
 import id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.Avengers.AvengersFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.Batman.BatmanFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.Captamerica.CaptamericaFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.Spiderman.SpidermanFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.Superman.SupermanFragment;
+import id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.Wolverine.WolverineFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -97,13 +102,28 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_batman) {
 
+            fragment = new BatmanFragment();
+            setTitle("Batman Movie");
+
         } else if (id == R.id.nav_captamerica) {
+
+            fragment = new CaptamericaFragment();
+            setTitle("Captain America Movie");
 
         } else if (id == R.id.nav_spiderman) {
 
+            fragment = new SpidermanFragment();
+            setTitle("Spiderman Movie");
+
         } else if (id == R.id.nav_superman) {
 
+            fragment = new SupermanFragment();
+            setTitle("Superman Movie");
+
         } else if (id == R.id.nav_wolverine) {
+
+            fragment = new WolverineFragment();
+            setTitle("Wolverine Movie");
 
         } else if (id == R.id.nav_xmen) {
 
