@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+import id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.DetailActivity;
 import id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.R;
 
 /**
@@ -53,9 +54,15 @@ public class AvengersAdapter extends RecyclerView.Adapter<AvengersAdapter.ViewHo
             public void onClick(View view) {
 //                Toast.makeText(context, "Will be released soon", Toast.LENGTH_LONG).show();
 
-                Intent singleBlogIntent = new Intent(context, AvengersDetailActivity.class);
-                singleBlogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //addFLags membuka activity dari fragment
-                singleBlogIntent.putExtra("blog_id", position); //position untuk menentukan posisi di array
+//                Intent singleBlogIntent = new Intent(context, AvengersDetailActivity.class);
+//                singleBlogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //addFLags membuka activity dari fragment
+//                singleBlogIntent.putExtra("blog_id", position); //position untuk menentukan posisi di array
+//                context.startActivity(singleBlogIntent);
+
+                Intent singleBlogIntent = new Intent(context, DetailActivity.class);
+                singleBlogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                singleBlogIntent.putExtra("blog_id", position);
+                singleBlogIntent.putExtra("jenis", "Avengers");
                 context.startActivity(singleBlogIntent);
             }
         });

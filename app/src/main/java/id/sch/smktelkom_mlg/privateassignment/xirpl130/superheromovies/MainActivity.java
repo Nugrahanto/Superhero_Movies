@@ -101,6 +101,11 @@ public class MainActivity extends AppCompatActivity
             fragment = new HomeFragment();
             setTitle("Avengers Movie");
 
+        } else if (id == R.id.nav_favo) {
+
+            fragment = new FavoriteFragment();
+            setTitle("Favourite");
+
         } else if (id == R.id.nav_avengers) {
 
             fragment = new AvengersFragment();
@@ -130,11 +135,6 @@ public class MainActivity extends AppCompatActivity
 
             fragment = new WolverineFragment();
             setTitle("Wolverine Movie");
-
-        } else if (id == R.id.nav_favo) {
-
-            fragment = new FavoriteFragment();
-            setTitle("Favourite");
 
         }
 
