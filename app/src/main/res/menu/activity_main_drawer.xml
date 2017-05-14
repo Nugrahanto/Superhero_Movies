@@ -3,30 +3,46 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_avengers"
-            android:icon="@drawable/ic_stars_black_24dp"
-            android:title="Avengers" />
-        <item
-            android:id="@+id/nav_batman"
-            android:icon="@drawable/ic_stars_black_24dp"
-            android:title="Batman" />
-        <item
-            android:id="@+id/nav_captamerica"
-            android:icon="@drawable/ic_stars_black_24dp"
-            android:title="Captain America " />
-        <item
-            android:id="@+id/nav_spiderman"
-            android:icon="@drawable/ic_stars_black_24dp"
-            android:title="Spiderman" />
-        <item
-            android:id="@+id/nav_superman"
-            android:icon="@drawable/ic_stars_black_24dp"
-            android:title="Superman " />
-        <item
-            android:id="@+id/nav_wolverine"
-            android:icon="@drawable/ic_stars_black_24dp"
-            android:title="Wolverine" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+    </group>
 
+    <item android:title="List Movie">
+        <menu>
+            <item
+                android:id="@+id/nav_avengers"
+                android:icon="@drawable/ic_avengers"
+                android:title="Avengers" />
+            <item
+                android:id="@+id/nav_batman"
+                android:icon="@drawable/ic_batman"
+                android:title="Batman" />
+            <item
+                android:id="@+id/nav_captamerica"
+                android:icon="@drawable/ic_captamerica"
+                android:title="Captain America " />
+            <item
+                android:id="@+id/nav_spiderman"
+                android:icon="@drawable/ic_spiderman"
+                android:title="Spiderman" />
+            <item
+                android:id="@+id/nav_superman"
+                android:icon="@drawable/ic_superman"
+                android:title="Superman " />
+            <item
+                android:id="@+id/nav_wolverine"
+                android:icon="@drawable/ic_wolverine"
+                android:title="Wolverine" />
+        </menu>
+
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favo"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Favourite" />
     </group>
 
 </menu>
