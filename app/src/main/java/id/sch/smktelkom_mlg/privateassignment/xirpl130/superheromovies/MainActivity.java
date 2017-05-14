@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         changePage(R.id.nav_home);
-        navigationView.setCheckedItem(R.id.nav_home);
+//        navigationView.setCheckedItem(R.id.nav_home);
     }
 
     @Override
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_favo) {
 
             fragment = new FavoriteFragment();
-            setTitle("Favourite");
+            setTitle("Playlist");
 
         } else if (id == R.id.nav_avengers) {
 

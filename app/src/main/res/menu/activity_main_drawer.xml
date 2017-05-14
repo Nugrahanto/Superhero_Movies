@@ -8,8 +8,8 @@
             android:title="Home" />
         <item
             android:id="@+id/nav_favo"
-            android:icon="@drawable/ic_home_black_24dp"
-            android:title="Favourite" />
+            android:icon="@drawable/ic_playlist_play_black_24dp"
+            android:title="Playlist" />
     </group>
 
     <item android:title="List Movie">

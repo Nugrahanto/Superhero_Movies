@@ -22,12 +22,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 import id.sch.smktelkom_mlg.privateassignment.xirpl130.superheromovies.HeroDB.HeroDBItem;
 
-public class DetailActivity extends AppCompatActivity implements Serializable {
+public class DetailActivity extends AppCompatActivity {
 
     public TextView textViewTitleet;
     public TextView textViewYearet;
@@ -94,11 +93,10 @@ public class DetailActivity extends AppCompatActivity implements Serializable {
             public void onClick(View view) {
                 if (isPressed) {
                     doSave();
-                    Snackbar.make(view, "Berhasil ditambahkan ke favorit", Snackbar.LENGTH_LONG)
+                    Snackbar.make(view, "Berhasil ditambahkan ke daftar putar", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                 } else {
-
-                    Snackbar.make(view, "Artikel favorit anda", Snackbar.LENGTH_LONG)
+                    Snackbar.make(view, "Artikel daftar putar anda", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                 }
                 isPressed = !isPressed;
@@ -118,6 +116,7 @@ public class DetailActivity extends AppCompatActivity implements Serializable {
         String year = textViewYearet.getText().toString();
         heroDBItem = new HeroDBItem(imageurl, title, year);
         heroDBItem.save();
+
     }
 
     private void loadRecyclerViewData() {
@@ -142,11 +141,11 @@ public class DetailActivity extends AppCompatActivity implements Serializable {
                             textViewYearet.setText(o.getString("Year"));
                             textViewIdet.setText("imdbID: " + o.getString("imdbID"));
                             textViewTypeet.setText(o.getString("Type"));
-//                            url = o.getJSONObject("link").getString("url");
+                            imageURL = o.getString("Poster");
 
                             Glide
                                     .with(DetailActivity.this)
-                                    .load(o.getString("Poster"))
+                                    .load(imageURL)
                                     .into(imageViewDetail);
 
                         } catch (JSONException e) {

@@ -13,6 +13,9 @@ public class HeroDBItem extends SugarRecord implements Serializable {
     public String title;
     public String year;
 
+    public HeroDBItem() {
+    }
+
     public HeroDBItem(String imageUrl, String title, String year) {
         this.imageUrl = imageUrl;
         this.title = title;

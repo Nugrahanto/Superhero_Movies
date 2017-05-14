@@ -40,7 +40,7 @@ public class HeroDBAdapter extends RecyclerView.Adapter<HeroDBAdapter.ViewHolder
     public void onBindViewHolder(ViewHolder holder, int position) {
         final HeroDBItem heroDBItem = fItem.get(position);
         holder.textViewHeadfav.setText(heroDBItem.title);
-        holder.textViewHeadfav.setText(heroDBItem.year);
+        holder.textViewDescfav.setText(heroDBItem.year);
 
         Glide
                 .with(context)
@@ -66,14 +66,7 @@ public class HeroDBAdapter extends RecyclerView.Adapter<HeroDBAdapter.ViewHolder
             textViewHeadfav = (TextView) itemView.findViewById(R.id.textViewHeadFav);
             textViewDescfav = (TextView) itemView.findViewById(R.id.textViewDescFav);
             imageViewOtoffav = (ImageView) itemView.findViewById(R.id.imageViewOtofFav);
-//            buttonDelete.setOnClickListener(new View.OnClickListener()
-//            {
-//                @Override
-//                public void onClick(View v)
-//                {
-//                    iFavouriteAdapter.doDelete(getAdapterPosition());
-//                }
-//            });
+
         }
 
     }
