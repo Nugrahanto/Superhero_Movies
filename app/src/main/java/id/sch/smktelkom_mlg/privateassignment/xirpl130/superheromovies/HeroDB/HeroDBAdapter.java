@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -37,7 +38,7 @@ public class HeroDBAdapter extends RecyclerView.Adapter<HeroDBAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         final HeroDBItem heroDBItem = fItem.get(position);
         holder.textViewHeadfav.setText(heroDBItem.title);
         holder.textViewDescfav.setText(heroDBItem.year);
@@ -47,6 +48,16 @@ public class HeroDBAdapter extends RecyclerView.Adapter<HeroDBAdapter.ViewHolder
                 .load(heroDBItem.imageUrl)
                 .into(holder.imageViewOtoffav);
 
+        holder.buttonDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final HeroDBItem heroDBItem1 = fItem.get(position);
+                fItem.remove(position);
+                heroDBItem1.delete();
+                HeroDBAdapter.this.notifyDataSetChanged();
+            }
+        });
+
     }
 
     @Override
@@ -54,11 +65,16 @@ public class HeroDBAdapter extends RecyclerView.Adapter<HeroDBAdapter.ViewHolder
         return fItem.size();
     }
 
+    public interface IHeroDBAdapter {
+        void doDelete(int pos);
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         public TextView textViewHeadfav;
         public TextView textViewDescfav;
         public ImageView imageViewOtoffav;
+        public Button buttonDelete;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -66,6 +82,7 @@ public class HeroDBAdapter extends RecyclerView.Adapter<HeroDBAdapter.ViewHolder
             textViewHeadfav = (TextView) itemView.findViewById(R.id.textViewHeadFav);
             textViewDescfav = (TextView) itemView.findViewById(R.id.textViewDescFav);
             imageViewOtoffav = (ImageView) itemView.findViewById(R.id.imageViewOtofFav);
+            buttonDelete = (Button) itemView.findViewById(R.id.buttonDelete);
 
         }
 
